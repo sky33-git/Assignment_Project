@@ -42,6 +42,7 @@ body {
 .nav-links ul {
     list-style: none;
     display: flex;
+    margin-right: 50px;
 }
 
 .nav-links ul li {
@@ -88,10 +89,6 @@ body {
     color: #eee;
 }
 
-.btn .scroll-to-services{
-
-}
-
 .about-section p {
     max-width: 800px;
     margin: 0 auto 20px auto;
@@ -108,7 +105,7 @@ body {
 }
 
 .product-card {
-    background-color: gray;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800/555/FFF?text=Hero+Image') no-repeat center center/cover;
     border: 1px solid black;
     border-radius: 8px;
     padding: 25px;
@@ -150,14 +147,68 @@ body {
     background-color: gray;
 }
 
-section {
-    padding: 40px 0;
-    border-bottom: 1px solid gray;
-    transition: border-color 0.3s ease;
+.contact-headers {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
 }
 
-section:last-of-type {
-    border-bottom: none;
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800/555/FFF?text=Hero+Image') no-repeat center center/cover;
+    box-shadow: 0 4px 8px white;
+    border: 1px solid black;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid white;
+    transition: border-color 0.3s ease;
 }
 
 section h2 {
@@ -168,11 +219,11 @@ section h2 {
 
 @media (max-width: 768px) {
     .navbar .nav-links {
-        display: none; 
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 70px; 
+        top: 70px;
         left: 0;
         background-color: var(--header-bg);
         box-shadow: 0 5px 5px var(--box-shadow-light);
@@ -181,7 +232,7 @@ section h2 {
     }
 
     .navbar .nav-links.active {
-        display: flex; 
+        display: flex;
     }
 
     .navbar .nav-links ul {
@@ -194,7 +245,7 @@ section h2 {
     }
 
     .hamburger-menu {
-        display: flex; 
+        display: flex;
     }
 
     .navbar .container {
@@ -207,12 +258,12 @@ section h2 {
 
     .theme-toggle {
         font-size: 1.3rem;
-        margin-left: auto; 
-        order: 1; 
+        margin-left: auto;
+        order: 1;
     }
 
     .hamburger-menu {
-        margin-left: 15px; 
+        margin-left: 15px;
     }
 
     .hero-content h1 {
@@ -233,7 +284,7 @@ section h2 {
     }
 
     .product-cards {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .product-card {
@@ -243,19 +294,5 @@ section h2 {
     .contact-form {
         padding: 20px;
         margin: 0 15px;
-    }
-
-    .modal-content {
-        width: 90%; 
-        padding: 20px;
-    }
-
-    .modal-content h3 {
-        font-size: 1.5rem;
-    }
-    .close-button {
-        font-size: 2rem;
-        top: 10px;
-        right: 15px;
     }
 }
