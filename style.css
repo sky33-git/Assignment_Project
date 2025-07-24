@@ -77,6 +77,14 @@ body {
     max-width: 800px;
 }
 
+.hero-content a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px;
+    background-color: rgb(97, 103, 101);
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
