@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Product Landing Page</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">AwesomeProducts</a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i> 
+            </button>
+
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Our Amazing Products</h1>
+                    <p>Experience the future with our innovative solutions designed to simplify your life and boost your
+                        productivity.</p>
+                    <a href="#services" class="btn scroll-to-services">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a dedicated team passionate about creating high-quality products that make a difference. Our
+                    mission is to provide cutting-edge technology with exceptional user experience.</p>
+                <p>Since our inception, we've focused on innovation, customer satisfaction, and building lasting
+                    relationships.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services & Products</h2>
+                <div class="product-cards">
+                    <div class="product-card" data-product-id="product1">
+                        <img src="https://via.placeholder.com/300x200/4CAF50/FFFFFF?text=Product+A" alt="Product A">
+                        <h3>Product A: Smart Gadget</h3>
+                        <p>An intelligent device designed for seamless connectivity and enhanced daily productivity.</p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="product-card" data-product-id="product2">
+                        <img src="https://via.placeholder.com/300x200/2196F3/FFFFFF?text=Product+B" alt="Product B">
+                        <h3>Product B: Secure Software</h3>
+                        <p>Robust and secure software solutions tailored for businesses of all sizes, protecting your
+                            data.</p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+
+                    <div class="product-card" data-product-id="product3">
+                        <img src="https://via.placeholder.com/300x200/FFC107/333333?text=Service+C" alt="Service C">
+                        <h3>Service C: Cloud Solutions</h3>
+                        <p>Scalable and reliable cloud infrastructure to host your applications and data effortlessly.
+                        </p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or need support? Reach out to us using the form below.</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-product-title"></h3>
+            <img id="modal-product-image" src="" alt="Product Image">
+            <p id="modal-product-description"></p>
+            <p class="additional-info">More details coming soon or Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Awesome Products. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="indexx.js"></script>
+</body>
+
+</html>
